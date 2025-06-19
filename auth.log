@@ -1,0 +1,12 @@
+Jun  2 06:22:37 server sshd[6205]: Failed password for invalid user admin from 192.168.0.100 port 22 ssh2
+Jun  2 06:22:45 server sshd[6206]: Failed password for invalid user admin from 192.168.0.100 port 22 ssh2
+Jun  2 06:23:02 server sshd[6207]: Failed password for invalid user root from 192.168.0.101 port 22 ssh2
+Jun  2 06:23:20 server sshd[6208]: Failed password for invalid user root from 192.168.0.101 port 22 ssh2
+Jun  2 06:23:37 server sshd[6209]: Failed password for invalid user root from 192.168.0.101 port 22 ssh2
+Jun  2 06:23:55 server sshd[6210]: Accepted password for valid_user from 192.168.0.105 port 22 ssh2
+Jun  2 06:24:10 server sshd[6211]: Failed password for invalid user test from 10.0.0.8 port 22 ssh2
+Jun  2 06:24:25 server sshd[6212]: Failed password for invalid user test from 10.0.0.8 port 22 ssh2
+Jun  2 06:24:45 server sshd[6213]: Failed password for invalid user test from 10.0.0.8 port 22 ssh2
+Jun  2 06:25:01 server sshd[6214]: Failed password for invalid user test from 10.0.0.8 port 22 ssh2
+Jun  2 06:25:18 server sshd[6215]: Failed password for invalid user test from 10.0.0.8 port 22 ssh2
+Jun  2 06:25:30 server sshd[6216]: Failed password for invalid user test from 10.0.0.8 port 22 ssh2
