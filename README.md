@@ -1,50 +1,76 @@
-README.md
 # 🛡️ Brute-Force Attack Detector
 
-A Python-based tool (with both **Streamlit GUI** and **command-line interface**) to detect brute-force SSH login attempts from log files such as `/var/log/auth.log`.
-
-## 🔍 Features
-
-- Upload SSH logs via GUI or command line
-- Detect repeated failed login attempts
-- Customize detection threshold and time window
-- Output results as CSV or JSON
-- Highlights suspicious IPs with timestamp and attempted username
-- Colorized terminal output for CLI
-- Ready for SOC analysts and cybersecurity projects
+A Python-based tool with **Streamlit GUI** and **command-line interface (CLI)** to detect brute-force SSH login attempts from system log files (e.g., `/var/log/auth.log`).
 
 ---
 
-## 📦 Installation
+## 🔍 Features
 
-Clone the repo and install dependencies:
+- ✅ Detect repeated failed login attempts from IPs
+- ✅ Adjustable detection threshold and time window
+- ✅ GUI mode with interactive filters and export options
+- ✅ CLI mode for automation and headless servers
+- ✅ Output results in CSV and JSON formats
+- ✅ Highlight suspected attackers by IP and username
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Installation
 
 ```bash
-git clone https://github.com/yourusername/brute-force-detector.git
-cd brute-force-detector
+git clone https://github.com/raza360ahmed/Brute-Force-Attack-Detector.git
+cd Brute-Force-Attack-Detector
 pip install -r requirements.txt
-🚀 Usage
+🖥️ Usage
 ✅ GUI Mode (Streamlit)
+Launch the app:
 
+bash
+Copy
+Edit
 streamlit run detector.py
-Upload .log or .txt files
+Upload a .log file, adjust the threshold and time window, then view and download results.
 
-Customize detection settings
-
-Export results
-
-🖥️ CLI Mode
+🧪 CLI Mode (Terminal)
+bash
+Copy
+Edit
 python detector.py --file auth.log --threshold 5 --window 60
-Automatically detects brute-force attempts
-
-Colorized terminal output
+This prints suspicious IPs with failed login attempts within the defined time window.
 
 📁 Project Structure
-brute-force-detector/
+bash
+Copy
+Edit
+Brute-Force-Attack-Detector/
 ├── detector.py
-├── auth.log            # (sample)
+├── auth.log              # Sample log for testing
 ├── README.md
 ├── .gitignore
 ├── requirements.txt
-🧪 Sample Log File
-Use the included auth.log file for testing or point it to your server's /var/log/auth.log
+🧾 Sample Output
+yaml
+Copy
+Edit
+[!] Suspicious IP: 192.168.0.101 | Failed Attempts: 6 | Last Attempt: 2025-06-02 06:23:37 | User: root
+🖼️ Screenshot
+
+![App Screenshot](front-page.png)
+![App Screenshot](result.png)
+
+
+📦 Dependencies
+streamlit
+
+pandas
+
+colorama
+
+Install with:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
