@@ -1,24 +1,7 @@
-
----
-
-## 🗂️ `.gitignore`
-
-```gitignore
-# Python cache
 __pycache__/
 *.pyc
-
-# Logs & outputs
 *.log
 *.csv
 *.json
-
-# Environment variables
 .env
-
-# Jupyter/IPython
-.ipynb_checkpoints/
-
-# Streamlit & IDE configs
-.streamlit/
 .vscode/
