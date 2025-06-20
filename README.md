@@ -23,54 +23,37 @@ A Python-based tool with **Streamlit GUI** and **command-line interface (CLI)** 
 git clone https://github.com/raza360ahmed/Brute-Force-Attack-Detector.git
 cd Brute-Force-Attack-Detector
 pip install -r requirements.txt
+
 🖥️ Usage
 ✅ GUI Mode (Streamlit)
 Launch the app:
-
-bash
-Copy
-Edit
 streamlit run detector.py
 Upload a .log file, adjust the threshold and time window, then view and download results.
 
 🧪 CLI Mode (Terminal)
-bash
-Copy
-Edit
 python detector.py --file auth.log --threshold 5 --window 60
 This prints suspicious IPs with failed login attempts within the defined time window.
 
 📁 Project Structure
-bash
-Copy
-Edit
 Brute-Force-Attack-Detector/
 ├── detector.py
 ├── auth.log              # Sample log for testing
 ├── README.md
 ├── .gitignore
 ├── requirements.txt
-🧾 Sample Output
-yaml
-Copy
-Edit
-[!] Suspicious IP: 192.168.0.101 | Failed Attempts: 6 | Last Attempt: 2025-06-02 06:23:37 | User: root
-🖼️ Screenshot
 
+🧾 Sample Output
+[!] Suspicious IP: 192.168.0.101 | Failed Attempts: 6 | Last Attempt: 2025-06-02 06:23:37 | User: root
+
+🖼️ Screenshot
 ![App Screenshot](front-page.png)
 ![App Screenshot](result.png)
 
 
 📦 Dependencies
 streamlit
-
 pandas
-
 colorama
 
 Install with:
-
-bash
-Copy
-Edit
 pip install -r requirements.txt
